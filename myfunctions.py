@@ -11,6 +11,8 @@ import urllib.request as ur
 from bs4 import BeautifulSoup
 import pandas as pd
 
+
+# Functions
 def get_meaning_foodex2_code(code):
     url = f"https://data.food.gov.uk/codes/foodtype/id/{code}"
     with ur.urlopen(url) as i:
