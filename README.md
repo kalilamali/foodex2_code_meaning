@@ -1,4 +1,4 @@
-# foodex2_code_meaning_app
+# foodex2_code_meaning
 This program takes an EFSA FoodEx2 code and returns its meaning.
 
 This program is a complement to the search bar at https://data.food.gov.uk/codes/
