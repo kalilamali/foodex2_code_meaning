@@ -15,7 +15,11 @@ https://kalilamali-foodex2-code-meaning-app-wr56ng.streamlitapp.com/
 ```bash
 git clone https://github.com/kalilamali/foodex2_code_meaning_app.git
 cd foodex2_code_meaning_app
+# You can install the requirements with pip:
 pip install -r requirements.txt
+# ... or with conda:
+conda create --name streamlit_playground --file ./requirements.txt
+conda activate streamlit_playground
 ```
 ## How-to run
 ```bash

@@ -7,23 +7,24 @@ https://www.wikidata.org/wiki/Property:P4637
 # Author: Karen Loaiza
 
 # Libraries
-import urllib.request as ur
-from bs4 import BeautifulSoup
+import requests
 import pandas as pd
+import io
 
 
 # Functions
 def get_meaning_foodex2_code(code):
-    url = f"https://data.food.gov.uk/codes/foodtype/id/{code}"
-    with ur.urlopen(url) as i:
-        html_doc = i.read()
-    soup = BeautifulSoup(html_doc, 'html.parser')
     try:
-        description = soup.find(id="description").h2.get_text()
-        meaning = description.split(':')[1]
+        url = f"https://data.food.gov.uk/codes/foodtype/id/{code}"
+        r = requests.get(url)
+        csv_string = r.content.decode("utf-8")
+        csv_file = io.StringIO(csv_string)
+        df = pd.read_csv(csv_file)
+        df['skos:prefLabel'] = df['skos:prefLabel'].astype(str)
+        meaning = df['skos:prefLabel'][0].strip('@en')
         meaning = meaning.strip()
         return meaning
-    except AttributeError:
+    except KeyError:
         error_msg = f'Description not found in {url}'
         return error_msg
 
