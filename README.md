@@ -1,29 +1,23 @@
 # foodex2_code_meaning
-This program takes an EFSA FoodEx2 code and returns its meaning.
-
-This program is a complement to the search bar at https://data.food.gov.uk/codes/
-
+This is the repository for the foodex2_code_meaning_app. An streamlit app that takes an EFSA FoodEx2 code and returns its meaning. This app is a complement to the search bar at https://data.food.gov.uk/codes/
 At https://data.food.gov.uk/codes/ you can search for a food using its name. For example: **Chocolate/cocoa-based products**\
 However you can't do a food search using its code: For example: **A0EQS**
 
 ## Try it online:
+Please be aware, it will take some time to wake-up the app. 
 https://kalilamali-foodex2-code-meaning-app-wr56ng.streamlitapp.com/
 
 <img src="https://github.com/kalilamali/foodex2_code_meaning_app/blob/main/app_image.png" width="500"/>
 
-## Installation
+## How-to-use
 ```bash
 git clone https://github.com/kalilamali/foodex2_code_meaning_app.git
 cd foodex2_code_meaning_app
-# You can install the requirements with pip:
-pip install -r requirements.txt
-# ... or with conda:
-conda create --name streamlit_playground --file ./requirements.txt
-conda activate streamlit_playground
+make install
+make test
+make run
 ```
-## How-to run
-```bash
-streamlit run app.py
+
 ```
 ## CITATION
 If you find this repository useful please cite:
