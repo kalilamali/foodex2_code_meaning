@@ -1,7 +1,5 @@
 # foodex2_code_meaning
-This is the repository for the foodex2_code_meaning_app. An streamlit app that takes an EFSA FoodEx2 code and returns its meaning. This app is a complement to the search bar at https://data.food.gov.uk/codes/
-At https://data.food.gov.uk/codes/ you can search for a food using its name. For example: **Chocolate/cocoa-based products**\
-However you can't do a food search using its code: For example: **A0EQS**
+This is the repository for the foodex2_code_meaning_app. An streamlit app that takes an EFSA FoodEx2 code and returns its meaning. This app is a complement to the search bar at https://data.food.gov.uk/codes/ At https://data.food.gov.uk/codes/ you can search for a food using its name. For example: **Chocolate/cocoa-based products**\ However you can't do a food search using its code: For example: **A0EQS**
 
 ## Try it online:
 Please be aware, it will take some time to wake-up the app. 
@@ -16,8 +14,6 @@ cd foodex2_code_meaning_app
 make install
 make test
 make run
-```
-
 ```
 ## CITATION
 If you find this repository useful please cite:
