@@ -1,3 +1,5 @@
+[![Python 3.10](https://github.com/kalilamali/foodex2_code_meaning/actions/workflows/makefile.yml/badge.svg)](https://github.com/kalilamali/foodex2_code_meaning/actions/workflows/makefile.yml)
+
 # foodex2_code_meaning
 This is the repository for the foodex2_code_meaning_app. An streamlit app that takes an EFSA FoodEx2 code and returns its meaning. This app is a complement to the search bar at https://data.food.gov.uk/codes/ At https://data.food.gov.uk/codes/ you can search for a food using its name. For example: **Chocolate/cocoa-based products**\ However you can't do a food search using its code: For example: **A0EQS**
 
