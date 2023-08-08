@@ -11,6 +11,8 @@ https://kalilamali-foodex2-code-meaning-app-wr56ng.streamlitapp.com/
 ```bash
 git clone https://github.com/kalilamali/foodex2_code_meaning_app.git
 cd foodex2_code_meaning_app
+python -m venv .foodex2_code_meaning_app
+source .foodex2_code_meaning_app/bin/activate
 make install
 make test
 make run
