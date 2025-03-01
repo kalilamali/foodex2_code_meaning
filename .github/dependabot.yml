@@ -10,6 +10,6 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-    python-packages:
-      patterns:
-        - "*"
+      python-packages:
+        patterns:
+          - "*"
